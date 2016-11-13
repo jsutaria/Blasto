@@ -1,5 +1,6 @@
 # Blasto 
 [![Build Status](https://travis-ci.org/jsutaria/Blasto.svg?branch=master)](https://travis-ci.org/jsutaria/Blasto) 
+
 Blasto is a spigot plugin where you can blow up your friends! It is open sourced for those interested in expanding it, and based off of the "BomberMan" game.
 
 ## Dependencies

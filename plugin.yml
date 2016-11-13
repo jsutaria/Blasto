@@ -1,0 +1,10 @@
+name: Blasto
+version: 1.1.0
+main: com.naturaliscraft.blasto.Blasto
+author: Jainil Sutaria (Lordusan)
+description: Blasto Plugin
+commands:
+  blasto:
+    description: BLASTO
+  ba:
+    description: BLASTO ADMIN

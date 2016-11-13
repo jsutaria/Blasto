@@ -1,5 +1,5 @@
 # Blasto 
-[![Build Status](https://travis-ci.org/jsutaria/Blasto.svg?branch=master)](https://travis-ci.org/jsutaria/Blasto)   [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jsutaria/Blasto/issues)  [![Github Releases](https://img.shields.io/github/downloads/jsutaria/Blasto/latest/total.svg)](https://github.com/jsutaria/Blasto/archive/master.zip) [![Website](https://img.shields.io/website-up-down-brightgreen-red/http/jainilsutaria.com.svg)](jainilsutaria.com)
+[![Build Status](https://travis-ci.org/jsutaria/Blasto.svg?branch=master)](https://travis-ci.org/jsutaria/Blasto)   [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/jsutaria/Blasto/issues)  [![Github Releases](https://img.shields.io/github/downloads/jsutaria/Blasto/latest/total.svg)](https://github.com/jsutaria/Blasto/archive/master.zip) [![Website](https://img.shields.io/website-up-down-brightgreen-red/http/jainilsutaria.com.svg)](jainilsutaria.com) [![Gratipay User](https://img.shields.io/gratipay/user/jsutaria.svg)](https://gratipay.com/~jsutaria/)
 
 Blasto is a spigot plugin where you can blow up your friends! It is open sourced for those interested in expanding it, and based off of the "BomberMan" game.
 

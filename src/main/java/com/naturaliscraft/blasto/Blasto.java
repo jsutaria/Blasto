@@ -26,6 +26,7 @@ public class Blasto extends JavaPlugin {
 	private static WorldEditPlugin we;
 	public static String tag = "&8[&7&k&l!&4&lB&c&ll&6&la&4&ls&c&lt&6&lo&7&k&l!&8] ";
 	private static Blasto instance;
+	
 	@Override
 	public void onEnable() {
 		instance = this;

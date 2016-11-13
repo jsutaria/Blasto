@@ -13,6 +13,8 @@ And that's all!
 ##Setup Instructions
 This minigame requires its own server. If you do not currently use [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/) or [LilyPad](http://www.lilypadmc.org), I would advise switching to either of them.
 
+Download the plugin from the `/target/` folder, or build it if you have made changes.
+
 You will need a lobby location, and several arenas. In order to set your lobby location, use `/ba setlobby`. This is defaulted to the world spawn point. All players will log into that location forth. In order to set your arenas, teleport to the arena, use `//wand` and left click on the floor of one corner of the arena, and right click on the floor of the other corner. Be sure to have white carpets as spawnpads for players. Now, do `/ba create <Arena Name>`. *It is advised you have multiple arenas for players to join, or else players wont be able to join while a game is in progress*. Finally, set the spawn locations for the players, by going to each spawnpad you created and do `/ba addspawn <Arena name>`.
 
 ##How to play.

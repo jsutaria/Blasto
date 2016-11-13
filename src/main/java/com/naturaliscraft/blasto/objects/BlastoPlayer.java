@@ -52,10 +52,12 @@ public class BlastoPlayer {
 	}
 	
 	public int getPower(PowerUps p) {
-		if(p.equals(PowerUps.POWER)) return this.powerLevel;
-		else if(p.equals(PowerUps.SPEED)) return this.speedLevel;
-		else return this.tntLevel;
-		
+		switch(p) {
+			case POWER: return this.powerLevel;
+			case SPEED: return this.speedLevel;
+			case TNT: return this.tntLevel;
+		}
+		return -1;
 	}
 	
 	public Player getPlayer() {

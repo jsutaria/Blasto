@@ -89,3 +89,4 @@ Temporary Items
 
 # Code Recommenders
 .recommenders/
+/target/classes/plugin.yml

@@ -4,7 +4,7 @@
 Blasto is a spigot plugin where you can blow up your friends! It is open sourced for those interested in expanding it, and based off of the "BomberMan" game.
 
 ## Dependencies
-Blasto requires only a few dependencies.
+Blasto requires only a few dependencies!
 * [ ] The obvious spigot/bukkit/craftbukkit
 * [ ] WorldEdit from https://dev.bukkit.org/bukkit-plugins/worldedit/
 

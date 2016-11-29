@@ -30,6 +30,8 @@ public class BlastoAdminCommand implements CommandExecutor {
 			if(args[0].equalsIgnoreCase("setlobby")) {
 				Blasto.getArenaManager().setLobby(player.getLocation());
 				ArenaStorage.setLobby(player.getLocation());
+				player.sendMessage(Util.color("&4&lLobby set!"));
+				return true;
 			}
 		}
 		if(args.length == 2) {

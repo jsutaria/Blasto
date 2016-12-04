@@ -216,15 +216,24 @@ public class Arena {
 		// TODO Auto-generated method stub
 		int x = 0;
 		for(BlastoPlayer bp : this.players) {
-			bp.getPlayer().teleport(this.spawnPoints.get(x));
 
-            Bukkit.getServer().getConsoleSender().sendMessage(
-                    String.format("X: %s | Y: %s | Z: %s",
-                            this.spawnPoints.get(x).getX(),
-                            this.spawnPoints.get(x).getY(),
-                            this.spawnPoints.get(x).getZ()
+            // FIXME: Really bad temporary fix
+            //
+            // This doesn't actually solve the problem
+            // It literally just changes the integer back
+            //
+            if (this.spawnPoints.get(x).getY() == 12.0625) {
+                this.spawnPoints.get(x).setY(6.0625);
+
+                Bukkit.getServer().getConsoleSender().sendMessage(
+                    String.format(
+                        "Fixed improper spawn Y +6 bug for %s",
+                        bp.getPlayer().getName()
                     )
-            );
+                );
+            }
+
+			bp.getPlayer().teleport(this.spawnPoints.get(x));
 
 			x++;
 		}
@@ -249,6 +258,11 @@ public class Arena {
 
 	public void addSpectator(Player p) {
 		this.spectate.add(p);
+
+        Bukkit.getServer().getConsoleSender().sendMessage(
+                String.format("%s is spectating", p.getName())
+        );
+
 		p.teleport(this.getSpawnPoints().get(0).add(0, 6, 0));
 		p.setAllowFlight(true);
 		p.setFlying(true);

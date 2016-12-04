@@ -35,6 +35,11 @@ public class WinLossListener implements Listener {
 		//***
 		if(a.getPlayers().size() > 2) a.addSpectator(e.getDyer().getPlayer());
 		//***
+
+        Bukkit.getServer().getConsoleSender().sendMessage(
+                String.format("%s is deaded", e.getDyer().getPlayer().getName())
+        );
+
 		a.removePlayer(e.getDyer());
 	}
 	

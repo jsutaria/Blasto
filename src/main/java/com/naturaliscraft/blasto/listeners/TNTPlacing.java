@@ -193,11 +193,11 @@ public class TNTPlacing implements Listener {
 					l.clone().add(0, 0, 0).getBlock().setType(Material.CARPET);
 					random = rand.nextInt(9);
 					if(random < 3) {
-						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.LIME.getDyeData());
+						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.LIME.getData());
 					} else if (random > 6) {
-						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.YELLOW.getDyeData());
+						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.YELLOW.getData());
 					} else {
-						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.RED.getDyeData());
+						l.clone().add(0, 0, 0).getBlock().setData(DyeColor.RED.getData());
 					}
 				}
 			}

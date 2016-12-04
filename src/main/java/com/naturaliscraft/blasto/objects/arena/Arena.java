@@ -159,7 +159,7 @@ public class Arena {
 					b.getLocation().clone().add(0, 1, 0).getBlock().setType(Material.LEAVES);
 					b.getLocation().clone().add(0, 2, 0).getBlock().setType(Material.LEAVES);
 				} else if(b.getType().equals(Material.CARPET)) {
-					if(b.getData() != DyeColor.WHITE.getDyeData()) {
+					if(b.getData() != DyeColor.WHITE.getData()) {
 						b.setType(Material.LEAVES);
 						b.getLocation().clone().add(0, 1, 0).getBlock().setType(Material.LEAVES);
 						b.getLocation().clone().add(0, 2, 0).getBlock().setType(Material.LEAVES);
@@ -217,11 +217,17 @@ public class Arena {
 		int x = 0;
 		for(BlastoPlayer bp : this.players) {
 			bp.getPlayer().teleport(this.spawnPoints.get(x));
+
+            Bukkit.getServer().getConsoleSender().sendMessage(
+                    String.format("X: %s | Y: %s | Z: %s",
+                            this.spawnPoints.get(x).getX(),
+                            this.spawnPoints.get(x).getY(),
+                            this.spawnPoints.get(x).getZ()
+                    )
+            );
+
 			x++;
 		}
-		
-		
-		
 	}
 
 	public List<Location> getSpawnPoints() {

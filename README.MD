@@ -28,4 +28,4 @@ In order to blast other players, they need to be exploded by your TNT. Place you
 >May the best blaster win!
 
 ## Credits
-Many thanks to [TeamRisk](http://github.com/teamrisk) for his help in the project!
+Many thanks to [TeamRisk](http://github.com/teamrisk) and [Cryptobyte](http://github.com/Cryptobyte) for their help in the project!

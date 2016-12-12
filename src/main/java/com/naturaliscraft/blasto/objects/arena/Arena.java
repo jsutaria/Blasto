@@ -159,7 +159,7 @@ public class Arena {
 					b.getLocation().clone().add(0, 1, 0).getBlock().setType(Material.LEAVES);
 					b.getLocation().clone().add(0, 2, 0).getBlock().setType(Material.LEAVES);
 				} else if(b.getType().equals(Material.CARPET)) {
-					if(b.getData() != DyeColor.WHITE.getData()) {
+					if(b.getData() != DyeColor.WHITE.getWoolData()) {
 						b.setType(Material.LEAVES);
 						b.getLocation().clone().add(0, 1, 0).getBlock().setType(Material.LEAVES);
 						b.getLocation().clone().add(0, 2, 0).getBlock().setType(Material.LEAVES);

@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jainilsutaria</groupId>
   <artifactId>blasto</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>Blasto</name>
   
   <repositories>
@@ -20,7 +20,7 @@
     <dependency>
     	<groupId>org.bukkit</groupId>
     	<artifactId>bukkit</artifactId>
-    	<version>1.10.2-R0.1-SNAPSHOT</version>
+    	<version>1.11-R0.1-SNAPSHOT</version>
     	<scope>provided</scope>
 	</dependency>
 	<dependency>
@@ -45,4 +45,16 @@
   		</resource>
   	</resources>
   </build>
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-26-51-releases</name>
+        <url>http://maven.jainilsutaria.com/artifactory/spigot</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-26-51-snapshots</name>
+        <url>http://maven.jainilsutaria.com/artifactory/spigot</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>

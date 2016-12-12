@@ -45,16 +45,4 @@
   		</resource>
   	</resources>
   </build>
-  <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>ip-172-31-26-51-releases</name>
-        <url>http://maven.jainilsutaria.com/artifactory/spigot</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>ip-172-31-26-51-snapshots</name>
-        <url>http://maven.jainilsutaria.com/artifactory/spigot</url>
-    </snapshotRepository>
-</distributionManagement>
 </project>

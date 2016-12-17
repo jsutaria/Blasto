@@ -31,7 +31,10 @@ public class BlastoCommand implements CommandExecutor {
 					return true;
 				}
 				try {
-					Blasto.getArenaManager().getCurrentWaiting().addPlayer(new BlastoPlayer(p));
+					Blasto.getArenaManager()
+					.getCurrentWaiting()
+					.addPlayer(
+							new BlastoPlayer(p));
 					p.sendMessage(Util.color(Blasto.tag + "&cJoined the game!"));
 				} catch (Exception e) {
 					e.printStackTrace();

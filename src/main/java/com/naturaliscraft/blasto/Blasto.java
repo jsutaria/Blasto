@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.naturaliscraft.MiniGames;
 import com.naturaliscraft.blasto.commands.BlastoAdminCommand;
 import com.naturaliscraft.blasto.commands.BlastoCommand;
 import com.naturaliscraft.blasto.listeners.GameChange;
@@ -26,6 +27,7 @@ public class Blasto extends JavaPlugin {
 	private static WorldEditPlugin we;
 	public static String tag = "&8[&7&k&l!&4&lB&c&ll&6&la&4&ls&c&lt&6&lo&7&k&l!&8] ";
 	private static Blasto instance;
+	public static MiniGames api;
 	
 	@Override
 	public void onEnable() {
@@ -52,6 +54,8 @@ public class Blasto extends JavaPlugin {
 		pm.registerEvents(new TNTPlacing(), this);
 		
 		we = (WorldEditPlugin) pm.getPlugin("WorldEdit");
+		api = (MiniGames) pm.getPlugin("MiniGamesAPI");
+
 		
 		if(we == null) {
 			System.out.println("Error, WorldEdit not found... disabling");

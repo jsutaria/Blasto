@@ -16,7 +16,7 @@ public class WinLossListener implements Listener {
 	@EventHandler
 	public void onWin(BlastoWinEvent e) {
 		Bukkit.broadcastMessage(Util.color(Blasto.tag +  
-				"&r" + e.getPlayer().getPlayer().getDisplayName() + "&c has won the game on " + e.getArena().getID()));
+				"&3" + e.getPlayer().getPlayer().getDisplayName() + "&c has won the game on " + e.getArena().getID()));
 		e.getArena().removePlayer(e.getPlayer());
 		e.getPlayer().teleportToLobby(); 
 	}
@@ -26,10 +26,10 @@ public class WinLossListener implements Listener {
 		Arena a = e.getArena();
 		if(e.getKiller() != null) {
 			if(!e.getKiller().getPlayer().equals(e.getDyer().getPlayer())) {
-				a.broadcast(e.getKiller().getPlayer().getDisplayName() + "&c has blasted " + 
+				a.broadcast("&3" + e.getKiller().getPlayer().getDisplayName() + "&c has blasted " + 
 						e.getDyer().getPlayer().getDisplayName());
 			} else { 
-				a.broadcast(e.getKiller().getPlayer().getDisplayName() + "&c has blasted themselves!");
+				a.broadcast("&3" + e.getKiller().getPlayer().getDisplayName() + "&c has blasted themselves!");
 			} 
 		}
 		//***

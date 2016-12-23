@@ -11,7 +11,7 @@ Blasto requires only a few dependencies!
 And that's all!
 
 ##Setup Instructions
-This minigame requires its own server. If you do not currently use [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/) or [LilyPad](http://www.lilypadmc.org), I would advise switching to either of them.
+This minigame requires its own server. If you do not currently use [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/) or [LilyPad](http://www.lilypadmc.org), or are not planning on having `Blasto` as your only feature (likely), I would advise switching to either of them.
 
 Download the plugin from the `/target/` folder, or build it if you have made changes.
 

@@ -1,15 +1,14 @@
 package com.naturaliscraft.blasto.objects.arena;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import com.naturaliscraft.blasto.Blasto;
+import com.naturaliscraft.blasto.objects.BlastoPlayer;
+import com.naturaliscraft.blasto.objects.GameState;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-import com.naturaliscraft.blasto.Blasto;
-import com.naturaliscraft.blasto.objects.BlastoPlayer;
-import com.naturaliscraft.blasto.objects.GameState;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArenaManager {
 	private Set<Arena> arenas = new HashSet<Arena>();
@@ -74,6 +73,7 @@ public class ArenaManager {
 					if(a.canAdvance()) {
 						a.advanceGameState();
 					}
+					if(a.getGameState().equals(GameState.ACTIVE)) a.fixYPlusSix();
 				}
 			}
 		}, 0L, 20L);

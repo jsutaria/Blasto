@@ -68,6 +68,4 @@ public class BlastoPlayer {
 		this.player.teleport(Blasto.getArenaManager().getLobby());
 	}
 
-	
-
 }

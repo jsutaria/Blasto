@@ -1,20 +1,5 @@
 package com.naturaliscraft.blasto.objects.arena;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import org.bukkit.Bukkit;
-import org.bukkit.DyeColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffectType;
-
 import com.naturaliscraft.blasto.Blasto;
 import com.naturaliscraft.blasto.events.BlastoWinEvent;
 import com.naturaliscraft.blasto.events.GameStateChangeEvent;
@@ -22,6 +7,16 @@ import com.naturaliscraft.blasto.objects.BlastoPlayer;
 import com.naturaliscraft.blasto.objects.GameState;
 import com.naturaliscraft.blasto.util.ScoreboardEditor;
 import com.naturaliscraft.blasto.util.Util;
+import org.bukkit.*;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionEffectType;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Arena {
 	private String id;
@@ -141,6 +136,17 @@ public class Arena {
 	public void setGameState(GameState gs) {
 		Bukkit.getPluginManager().callEvent(new GameStateChangeEvent(this, this.getGameState(), gs));
 		this.gamestate = gs;
+	}
+
+	public void fixYPlusSix() {
+		//FIXME: again, another horrible fix for the Y+6 bug
+		for(BlastoPlayer p : this.getPlayers()) {
+			Location l = p.getPlayer().getLocation();
+			if(l.getY() > 8.0) {
+				l.setY(6.025);
+				p.getPlayer().teleport(l);
+			}
+		}
 	}
 	
 	public void advanceGameState() {
